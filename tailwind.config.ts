@@ -8,6 +8,14 @@ const config: Config = {
       serif: ['Roboto', 'serif'],
     },
     plugins: [],
+    extend: {
+      fontSize: {
+        subtitle: '42px',
+      },
+      fontWeight: {
+        subtitle: '700',
+      },
+    },
   },
   plugins: [],
 };

@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Button from '../utils/button';
 
 type navItem = {
   name: string;
@@ -117,9 +118,7 @@ const Header = () => {
             <span className="block">понедельник - пятница</span>
           </div>
         </div>
-        <button className="text-lime-500 py-1 px-5 border-spacing-1 border-2 rounded border-lime-500 hover:bg-lime-500 hover:text-white transition">
-          Заказать звонок
-        </button>
+        <Button name={'Заказать звонок'}/>
       </nav>
     </header>
   );
