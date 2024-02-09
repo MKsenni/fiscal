@@ -39,7 +39,7 @@ const Package = ({
         ))}
       </ul>
       <div className="flex justify-center">
-        <Button name={'Получить стоимость'}/>
+        <Button name={'Получить стоимость'} />
       </div>
     </li>
   );

@@ -28,7 +28,7 @@ const Packages = () => {
   ];
 
   return (
-    <div className="md:px-[120px] sm:px-16 px-4 mt-[70px] flex flex-col gap-12">
+    <div className="md:px-[120px] sm:px-16 px-4 my-[70px] flex flex-col gap-12">
       <Subtitle name={'Пакетные услуги'} />
       <ul className="flex flex-wrap gap-5 justify-center over">
         {services.map((service, idx) => (

@@ -2,7 +2,8 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import Button from '../utils/button';
+import Button from '../../utils/button';
+import { nameNavItem } from '@/constants/constants';
 
 type navItem = {
   name: string;
@@ -23,7 +24,7 @@ function NavLink({
     <li className="nav-item">
       {link && (
         <Link
-          className="px-3 py-2 flex items-center uppercase leading-snug text-slate-900 hover:text-sky-700"
+          className="px-3 py-2 flex items-center uppercase leading-snug text-slate-900 hover:text-sky-700 transition-colors"
           href={link}
           onClick={close}
         >
@@ -53,11 +54,11 @@ const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const closeOnClick = () => setNavbarOpen(false);
   const navItems: navItem[] = [
-    { name: 'Партнеры', link: '/catalog', close: closeOnClick },
-    { name: 'Услуги', link: '/catalog', close: closeOnClick },
-    { name: 'Цены', link: '/about', close: closeOnClick },
-    { name: 'Акции', link: '/account', close: closeOnClick },
-    { name: 'Контакты', link: '/login', close: closeOnClick },
+    { name: nameNavItem.partner, link: '/catalog', close: closeOnClick },
+    { name: nameNavItem.service, link: '/catalog', close: closeOnClick },
+    { name: nameNavItem.price, link: '/about', close: closeOnClick },
+    { name: nameNavItem.promo, link: '/account', close: closeOnClick },
+    { name: nameNavItem.contacts, link: '/login', close: closeOnClick },
   ];
 
   return (
@@ -70,7 +71,7 @@ const Header = () => {
       >
         <div className="w-12 h-12 hover:rotate-90 transition-transform">
           <Link href="/" title="welcome page">
-            SOME ICON
+            МОЙ НАЛОГ
           </Link>
         </div>
         <button
@@ -106,7 +107,7 @@ const Header = () => {
             })}
           </ul>
         </div>
-        <div className="flex flex-col text-center text-xs lg:text-base">
+        <div className="flex flex-col text-center text-xs lg:text-base items-center">
           <div>
             <a className="flex font-semibold" href="tel:+79220987868">
               <Image src="/Vector.svg" width={20} height={20} alt="number" />
@@ -118,7 +119,7 @@ const Header = () => {
             <span className="block">понедельник - пятница</span>
           </div>
         </div>
-        <Button name={'Заказать звонок'}/>
+        <Button name={'Заказать звонок'} />
       </nav>
     </header>
   );
