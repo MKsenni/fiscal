@@ -16,9 +16,10 @@ const Package = ({
       <div className="px-7 flex gap-1 items-center h-20 bg-slate-200 rounded-t-lg">
         <Image
           src="/calculator_8477820.png"
-          alt="иконка калькулятор"
+          alt="Icon by IconBaandar"
           width={57}
           height={57}
+          rel="https://www.freepik.com/icon/calculator_8477820#fromView=search&term=accounting&track=ais&page=1&position=14"
         />
         <h3 className="text-lime-500 font-bold text-lg">{subtitle}</h3>
       </div>

@@ -1,8 +1,8 @@
 import { MdMailOutline } from 'react-icons/md';
 import { BsGeoAlt } from 'react-icons/bs';
 import { nameNavItem } from '@/constants/constants';
-import { LuPhoneCall } from "react-icons/lu";
-import { LiaCopyright } from "react-icons/lia";
+import { LuPhoneCall } from 'react-icons/lu';
+import { LiaCopyright } from 'react-icons/lia';
 
 const Footer = () => {
   const services = [
@@ -15,7 +15,7 @@ const Footer = () => {
   const navItems = Object.values(nameNavItem);
   return (
     <footer className="bg-gray-800 md:px-[120px] sm:px-16 px-4 flex flex-col gap-8 pt-14 pb-8 text-white">
-      <div className='flex flex-wrap gap-8'>
+      <div className="flex flex-wrap gap-8">
         <div className="flex flex-col flex-1 align-baseline justify-center">
           <h2 className="text-5xl">Мой налог</h2>
         </div>
@@ -41,8 +41,8 @@ const Footer = () => {
         </ul>
         <div className="flex flex-col flex-1 gap-2">
           <div className="flex gap-1">
-            <div className='pt-1'>
-            <LuPhoneCall style={{ color: '#6CAC3D' }} />
+            <div className="pt-1">
+              <LuPhoneCall style={{ color: '#6CAC3D' }} />
             </div>
             <div className="flex flex-col text-xs lg:text-base gap-1">
               <div>
@@ -69,9 +69,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='m-auto text-lime-500 flex gap-2 items-center'>
-      <LiaCopyright style={{ color: '#6CAC3D' }}/>
-      <a href="#">2024 МОЙ НАЛОГ</a>
+      <div className="m-auto text-lime-500 flex gap-2 items-center">
+        <LiaCopyright style={{ color: '#6CAC3D' }} />
+        <a href="#">2024 МОЙ НАЛОГ</a>
       </div>
     </footer>
   );
