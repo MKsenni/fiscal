@@ -1,8 +1,10 @@
 import { MdMailOutline } from 'react-icons/md';
 import { BsGeoAlt } from 'react-icons/bs';
-import { nameNavItem } from '@/constants/constants';
+import { nameNavItems } from '@/constants/constants';
 import { LuPhoneCall } from 'react-icons/lu';
 import { LiaCopyright } from 'react-icons/lia';
+import { SlSocialVkontakte } from 'react-icons/sl';
+import { SiViber, SiWhatsapp } from 'react-icons/si';
 
 const Footer = () => {
   const services = [
@@ -12,7 +14,7 @@ const Footer = () => {
     'Заполнение деклараций',
     'Прочие услуги',
   ];
-  const navItems = Object.values(nameNavItem);
+  const navItems = Object.values(nameNavItems);
   return (
     <footer className="bg-gray-800 md:px-[120px] sm:px-16 px-4 flex flex-col gap-8 pt-14 pb-8 text-white">
       <div className="flex flex-wrap gap-8">
@@ -39,14 +41,18 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <div className="flex flex-col flex-1 gap-2">
+        <div id="contacts" className="flex flex-col flex-1 gap-2">
           <div className="flex gap-1">
-            <div className="pt-1">
+            <div className="pt-1 shrink-0">
               <LuPhoneCall style={{ color: '#6CAC3D' }} />
             </div>
             <div className="flex flex-col text-xs lg:text-base gap-1">
               <div>
-                <a className="flex font-semibold" href="tel:+79220987868">
+                <a
+                  className="flex font-semibold"
+                  href="tel:+79220987868"
+                  target="_blank"
+                >
                   <span>+7 (922) 098-78-68</span>
                 </a>
               </div>
@@ -60,12 +66,31 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-row gap-1 items-center">
-            <MdMailOutline style={{ color: '#6CAC3D' }} />
-            <a href="mailto:">Электронная почта</a>
+            <MdMailOutline style={{ color: '#6CAC3D', flexShrink: 0 }} />
+            <a href="mailto:Finexo72@mail.ru" target="_blank">
+              Finexo72@mail.ru
+            </a>
           </div>
           <div className="flex flex-row gap-1 items-center">
-            <BsGeoAlt style={{ color: '#6CAC3D' }} />
-            <span className="block">Адрес</span>
+            <BsGeoAlt style={{ color: '#6CAC3D', flexShrink: 0 }} />
+            <a
+              href="https://yandex.ru/maps/-/CDBtbVIN"
+              target="_blank"
+              className="block"
+            >
+              625001 Тюмень, Ямская улица, 96А корпус 1, офис 500
+            </a>
+          </div>
+          <div className="flex flex-row gap-3 items-center pl-5">
+            <a href="https://vk.com/id734428076" target="_blank">
+              <SlSocialVkontakte style={{ color: '#6CAC3D' }} />
+            </a>
+            <a href="https://vk.com/id734428076" target="_blank">
+              <SiViber style={{ color: '#6CAC3D' }} />
+            </a>
+            <a href="https://vk.com/id734428076" target="_blank">
+              <SiWhatsapp style={{ color: '#6CAC3D' }} />
+            </a>
           </div>
         </div>
       </div>

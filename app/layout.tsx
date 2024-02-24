@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     'налоговая помощь',
     'декларация',
     'заполнение декларации',
-    'ленусикшевердина',
   ],
 };
 
@@ -27,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={inter.className + ' text-xs md:text-sm lg:text-base'}>
         <Header />
         {children}

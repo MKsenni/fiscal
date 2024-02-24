@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Button from '../../utils/button';
-import { nameNavItem } from '@/constants/constants';
+import { nameNavItems } from '@/constants/constants';
 
 type navItem = {
   name: string;
@@ -54,11 +54,11 @@ const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const closeOnClick = () => setNavbarOpen(false);
   const navItems: navItem[] = [
-    { name: nameNavItem.partner, link: '/catalog', close: closeOnClick },
-    { name: nameNavItem.service, link: '/catalog', close: closeOnClick },
-    { name: nameNavItem.price, link: '/about', close: closeOnClick },
-    { name: nameNavItem.promo, link: '/account', close: closeOnClick },
-    { name: nameNavItem.contacts, link: '/login', close: closeOnClick },
+    { name: nameNavItems.partner, link: '/catalog', close: closeOnClick },
+    { name: nameNavItems.service, link: '/catalog', close: closeOnClick },
+    { name: nameNavItems.price, link: '/about', close: closeOnClick },
+    { name: nameNavItems.promo, link: '#promos', close: closeOnClick },
+    { name: nameNavItems.contacts, link: '#contacts', close: closeOnClick },
   ];
 
   return (
@@ -69,7 +69,7 @@ const Header = () => {
         className="mx-auto flex items-center justify-between md:px-[120px] sm:px-16 px-4 gap-3"
         aria-label="Global"
       >
-        <div className="w-12 h-12 hover:rotate-90 transition-transform">
+        <div className="w-12 h-12">
           <Link href="/" title="welcome page">
             МОЙ НАЛОГ
           </Link>
@@ -107,7 +107,7 @@ const Header = () => {
             })}
           </ul>
         </div>
-        <div className="flex flex-col text-center text-xs lg:text-base items-center">
+        <div className="flex flex-col text-center text-xs lg:text-base items-center shrink-0">
           <div>
             <a className="flex font-semibold" href="tel:+79220987868">
               <Image src="/Vector.svg" width={20} height={20} alt="number" />
@@ -115,8 +115,7 @@ const Header = () => {
             </a>
           </div>
           <div>
-            <span className="block">09:00 - 18:00</span>
-            <span className="block">понедельник - пятница</span>
+            <span className="block">пн. - пт. 08:30 - 17:00</span>
           </div>
         </div>
         <Button name={'Заказать звонок'} />

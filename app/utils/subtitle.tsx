@@ -1,11 +1,5 @@
 const Subtitle = ({ name }: { name: string }) => {
-  return (
-    <div>
-      <h2 className="text-2xl font-subtitle sm:text-subtitle text-center">
-        {name}
-      </h2>
-    </div>
-  );
+  return <h2 className="text-center font-bold sm:text-4xl text-2xl">{name}</h2>;
 };
 
 export default Subtitle;
