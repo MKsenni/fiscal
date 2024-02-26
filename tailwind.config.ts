@@ -4,8 +4,8 @@ const config: Config = {
   content: ['./app/components/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     fontFamily: {
-      sans: ['Roboto', 'sans-serif'],
-      serif: ['Roboto', 'serif'],
+      sans: ['Arimo', 'sans-serif'],
+      serif: ['Arimo', 'serif'],
     },
     plugins: [],
     extend: {

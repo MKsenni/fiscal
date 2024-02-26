@@ -7,13 +7,13 @@ import Choose from './components/why-choose-us/choose';
 
 export default function Home() {
   return (
-    <main>
+    <div className="font-sans">
       <Main />
       <Services />
       <Packages />
       <Choose />
       <Promo />
       <Footer />
-    </main>
+    </div>
   );
 }
