@@ -36,7 +36,6 @@ const Main = () => {
                   rel="https://www.freepik.com/icon/talk_8167197#fromView=search&term=consultation&track=ais&page=1&position=0"
                 />
                 <p>Бесплатная консультация</p>
-                
               </div>
               <div>
                 <Image
@@ -47,7 +46,6 @@ const Main = () => {
                   rel="https://www.freepik.com/icon/writing_8167235#fromView=resource_detail&position=0"
                 />
                 <p>Заключение договора</p>
-                
               </div>
               <div>
                 <Image

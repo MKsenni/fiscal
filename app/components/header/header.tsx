@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Button from '../../utils/button';
 import { nameNavItems } from '@/constants/constants';
+import { LuPhoneCall } from 'react-icons/lu';
 
 type navItem = {
   name: string;
@@ -21,10 +22,10 @@ function NavLink({
   close: () => void;
 }) {
   return (
-    <li className="nav-item">
+    <li>
       {link && (
         <Link
-          className="px-3 py-2 flex items-center uppercase leading-snug text-slate-900 hover:text-sky-700 transition-colors"
+          className="px-3 py-2 flex items-center uppercase text-slate-900 hover:text-sky-700 transition-colors text-sm font-medium"
           href={link}
           onClick={close}
         >
@@ -63,13 +64,13 @@ const Header = () => {
 
   return (
     <header
-      className={`${scrollStyle} transition-all duration-300 z-50 shadow-[0_6px_9px_0px_rgba(0,0,0,0.25)]`}
+      className={`${scrollStyle} transition-all duration-300 z-50 shadow-[0_6px_9px_0px_rgba(0,0,0,0.25)] font-sans`}
     >
       <nav
         className="mx-auto flex items-center justify-between md:px-[120px] sm:px-16 px-4 gap-3"
         aria-label="Global"
       >
-        <div className="w-12 h-12">
+        <div className="w-12 h-12 font-bold">
           <Link href="/" title="welcome page">
             МОЙ НАЛОГ
           </Link>
@@ -94,7 +95,7 @@ const Header = () => {
           }
           data-testid="nav"
         >
-          <ul className="flex flex-col md:flex-row list-none md:ml-auto font-serif">
+          <ul className="flex flex-col md:flex-row list-none md:ml-auto">
             {navItems.map((item) => {
               return (
                 <NavLink
@@ -109,8 +110,11 @@ const Header = () => {
         </div>
         <div className="flex flex-col text-center text-xs lg:text-base items-center shrink-0">
           <div>
-            <a className="flex font-semibold" href="tel:+79220987868">
-              <Image src="/Vector.svg" width={20} height={20} alt="number" />
+            <a
+              className="flex font-semibold items-center gap-1"
+              href="tel:+79220987868"
+            >
+              <LuPhoneCall style={{ color: '#6CAC3D' }} />
               <span>+7 (922) 098-78-68</span>
             </a>
           </div>
