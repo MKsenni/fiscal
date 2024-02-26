@@ -54,9 +54,9 @@ const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const closeOnClick = () => setNavbarOpen(false);
   const navItems: navItem[] = [
-    { name: nameNavItems.partner, link: '/catalog', close: closeOnClick },
-    { name: nameNavItems.service, link: '/catalog', close: closeOnClick },
-    { name: nameNavItems.price, link: '/about', close: closeOnClick },
+    { name: nameNavItems.partner, link: '#partners', close: closeOnClick },
+    { name: nameNavItems.service, link: '#services', close: closeOnClick },
+    { name: nameNavItems.package, link: '#packages', close: closeOnClick },
     { name: nameNavItems.promo, link: '#promos', close: closeOnClick },
     { name: nameNavItems.contacts, link: '#contacts', close: closeOnClick },
   ];

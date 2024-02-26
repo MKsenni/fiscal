@@ -9,9 +9,9 @@ const Promo = () => {
       <Subtitle name={'Акции'} />
       <ul className="flex flex-wrap gap-5 justify-center">
         {promos.map((item) => (
-          <li className="flex flex-col gap-3 sm:w-2/4 md:flex-1 w-3/4 rounded-lg overflow-hidden" key={item.title}>
+          <li className="flex flex-col gap-3 sm:w-2/4 md:flex-1 w-3/4 rounded-lg overflow-hidden shadow-md" key={item.title}>
             <Image width={320} height={300} src={item.src} alt={item.title} />
-            <p className='font-medium'>{item.title}</p>
+            <p className='font-medium p-3'>{item.title}</p>
           </li>
         ))}
       </ul>

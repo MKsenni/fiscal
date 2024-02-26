@@ -10,7 +10,7 @@ const Reason = ({
   return (
     <>
       <h3 className="text-xs lg:text-base font-bold">{title}</h3>
-      <div className="h-1 w-14 bg-lime-600"></div>
+      <div className="h-0.5 w-14 bg-lime-600"></div>
       <p>{description}</p>
     </>
   );
