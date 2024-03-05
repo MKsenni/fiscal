@@ -1,0 +1,18 @@
+import FormItems from "./formItems";
+import OrderCall from "./orderCall";
+
+const Calculator = () => {
+  return (
+    <div className="lg:w-2/5 w-4/5 my-6 bg-white/90 rounded-lg p-8 text-lg font-bold flex flex-col gap-3 absolute right-14">
+      <h2 className="text-center uppercase">Рассчитать стоимость бухгалтерских услуг</h2>
+      <FormItems/>
+      <div className="flex flex-wrap gap-5 text-sky-800 bg-sky-50 py-4">
+        <h4 className="text-base font-medium">Стоимость услуг:</h4>
+        <p>4 500 руб</p>
+      </div>
+      <OrderCall />
+    </div>
+  );
+};
+
+export default Calculator;

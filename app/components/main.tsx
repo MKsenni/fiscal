@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Calculator from './calculator';
+import Calculator from './calculator/calculator';
 import Link from 'next/link';
 
 const Main = () => {
@@ -13,7 +13,7 @@ const Main = () => {
           </Link>
         </div>
         <div className="absolute z-10 inset-0 bg-gradient-to-l from-transparent to-white/80 flex lg:flex-row flex-col">
-          <div className="flex flex-col gap-10 lg:w-3/5 w-10/12 md:px-[120px] sm:px-16 px-4 mt-8">
+          <div className="flex flex-col gap-10 lg:w-3/5 w-10/12 sm:px-16 mt-8">
             <h1 className="lg:text-6xl sm:text-5xl text-3xl font-bold">
               Бухгалтерское
               <br />
@@ -26,7 +26,7 @@ const Main = () => {
               </div>{' '}
               руб / квартал
             </div>
-            <div className="md:grid md:grid-cols-2 sm:flex sm:flex-1 grid grid-cols-2 gap-4 text-base font-bold">
+            <div className="md:grid md:grid-cols-2 sm:flex sm:flex-1 grid grid-cols-2 auto-rows-max md:auto-rows-max gap-4 text-base font-bold">
               <div>
                 <Image
                   src="/talk_8167197.png"

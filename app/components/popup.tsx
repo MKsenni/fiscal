@@ -17,7 +17,7 @@ const BigPopup = ({ onClose, children }: BigPopupProps) => {
             className="absolute right-2 top-2"
             onClick={onClose}
           >
-            {<FaTimes style={{ color: '#276339' }} title="Exit" />}
+            {<FaTimes style={{ color: '#276339', width: '20px', height: '20px' }} title="Exit" />}
           </button>
         </div>
       </div>

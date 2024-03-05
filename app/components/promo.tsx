@@ -1,5 +1,5 @@
 import { promos } from '@/constants/constants';
-import Subtitle from '@/utils/subtitle';
+import Subtitle from '@/components/subtitle';
 import Image from 'next/image';
 import React from 'react';
 

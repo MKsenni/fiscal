@@ -2,7 +2,7 @@ import {
   contentServicesListIP,
   contentServicesListLTD,
 } from '@/constants/constants';
-import Subtitle from '../../utils/subtitle';
+import Subtitle from '../subtitle';
 import Package from './package';
 import { ServicesPackagesType } from '@/types/types';
 

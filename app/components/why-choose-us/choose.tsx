@@ -1,5 +1,5 @@
 import { chooseItems } from '@/constants/constants';
-import Subtitle from '@/utils/subtitle';
+import Subtitle from '@/components/subtitle';
 import React from 'react';
 import Reason from './reason';
 

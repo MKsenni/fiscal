@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../utils/button';
+import Button from '../button';
 import Image from 'next/image';
 
 const Package = ({
@@ -23,7 +23,7 @@ const Package = ({
         />
         <h3 className="text-lime-500 font-bold text-lg">{subtitle}</h3>
       </div>
-      <div className="px-7 text-sm font-normal pt-6 h-[170px] sm:h-[143px] border-b-2 border-sky-700">
+      <div className="px-7 text-sm font-normal pt-6 h-[190px] sm:h-[173px] border-b-2 border-sky-700">
         <p>{description}</p>
       </div>
       <ul className="px-7 my-4 flex flex-col gap-2">

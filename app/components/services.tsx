@@ -1,6 +1,6 @@
 'use client';
 import { blockService, services } from '@/constants/constants';
-import Subtitle from '@/utils/subtitle';
+import Subtitle from '@/components/subtitle';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
@@ -50,7 +50,7 @@ const NameBlock = ({ name }: { name: [string, string] }) => {
 
   return (
     <div
-      className="group h-full w-full flex flex-col items-center justify-center cursor-pointer p-3 shadow-lg shadow-lime-600/50 rounded transition-transform hover:scale-110 hover:absolute hover:z-20"
+      className="group h-full w-full flex flex-col items-center justify-center cursor-pointer p-3 shadow-lg rounded transition-transform hover:scale-110 hover:absolute hover:z-20"
       onClick={handleClick}
     >
       <div className="m-3 space-y-2.5">

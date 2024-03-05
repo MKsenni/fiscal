@@ -34,7 +34,7 @@ const Footer = () => {
         <ul className="flex flex-col gap-3 flex-1">
           {navItems.map((service, idx) => (
             <li
-              className="font-bold text-sm uppercase hover:text-sky-700 transition-colors cursor-pointer"
+              className="font-bold text-sm uppercase hover:text-sky-800 transition-colors cursor-pointer"
               key={idx}
             >
               {service}

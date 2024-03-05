@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import Button from '../../utils/button';
+import Button from '../button';
 import { nameNavItems } from '@/constants/constants';
 import { LuPhoneCall } from 'react-icons/lu';
 
@@ -25,7 +25,7 @@ function NavLink({
     <li>
       {link && (
         <Link
-          className="px-3 py-2 flex items-center uppercase text-slate-900 hover:text-sky-700 transition-colors text-sm font-medium"
+          className="px-3 py-2 flex items-center text-slate-900 hover:text-sky-800 transition-colors text-base font-medium"
           href={link}
           onClick={close}
         >
@@ -57,7 +57,6 @@ const Header = () => {
   const navItems: navItem[] = [
     { name: nameNavItems.partner, link: '#partners', close: closeOnClick },
     { name: nameNavItems.service, link: '#services', close: closeOnClick },
-    { name: nameNavItems.package, link: '#packages', close: closeOnClick },
     { name: nameNavItems.promo, link: '#promos', close: closeOnClick },
     { name: nameNavItems.contacts, link: '#contacts', close: closeOnClick },
   ];
@@ -115,11 +114,11 @@ const Header = () => {
               href="tel:+79220987868"
             >
               <LuPhoneCall style={{ color: '#6CAC3D' }} />
-              <span>+7 (922) 098-78-68</span>
+              <span className='text-sky-800'>+7 (922) 098-78-68</span>
             </a>
           </div>
           <div>
-            <span className="block">пн. - пт. 08:30 - 17:00</span>
+            <span className="block text-sm">пн. - пт. 08:30 - 17:00</span>
           </div>
         </div>
         <Button name={'Заказать звонок'} />

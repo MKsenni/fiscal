@@ -2,8 +2,7 @@ import { ServicesPackagesType, ServicesType } from '@/types/types';
 
 export const nameNavItems = {
   partner: 'Партнеры',
-  service: 'Услуги и цены',
-  package: 'Пакетные услуги',
+  service: 'Услуги',
   promo: 'Акции',
   contacts: 'Контакты',
 };
@@ -13,7 +12,7 @@ const commonService = 'Ведение кадрового учета работн
 export const contentServicesListIP: ServicesPackagesType = {
   subtitle: 'Бухгалетрское сопровождение ИП',
   description:
-    'Такой тип ремонта подойдет, если требкеться отремонтировать квартиру: выровнять стены, сделать стяжку полов, проложить инженерию и выполнить чистовую отделку.',
+    'Услуги на условиях аутсорсинга. Берем на себя комплексное сопровождение бухгалтерии, подготовку и сдачу отчетности в контролирующие органы, восстановление бухучета и другие виды работ.',
   services: [
     'ИП УСН Доходы от 4500 руб - квартал',
     'ИП УСН Доходы минус расходы от 6000 руб / квартал',
@@ -25,7 +24,7 @@ export const contentServicesListIP: ServicesPackagesType = {
 export const contentServicesListLTD: ServicesPackagesType = {
   subtitle: 'Бухгалетрское сопровождение ООО',
   description:
-    'Такой тип ремонта подойдет, если требкеться отремонтировать квартиру: выровнять стены, сделать стяжку полов, проложить инженерию и выполнить чистовую отделку.',
+    'Услуги по комплексному бухгалтерскому обслуживанию представляют собой весь комплекс работ по бухгалтерскому и налоговому учету предприятия. Кроме того, наши специалисты представят ваши интересы в налоговой инспекции, фондах, государственных структурах.',
   services: [
     'ООО УСН Доходы от 3000 руб - месяц',
     'ООО УСН Доходы минус расходы от 5000 руб / месяц',
@@ -136,3 +135,10 @@ export const promos = [
   },
   { src: '/all_clients.jpg', title: 'Регистрация ООО и ИП БЕСПЛАТНО' },
 ];
+
+export const calculatorBlocks = [
+  {title: 'Организационно-правовая форма', items: [{desc: 'Индивидуальный предприниматель', checked: true }, {desc: 'Общество с ограниченной ответственностью', checked: false}], name: 'opf'},
+  {title: 'Вид налогообложения', items: [{desc: 'УСН Доходы', checked: true }, {desc: 'УСН Доходы минус Расходы', checked: false }, {desc: 'ОСНО', checked: false }], name: 'kind'},
+  {title: 'Количество сотрудников', items: [{desc: '0 (для ИП)', checked: true }, {desc: '1', checked: false }, {desc: '2 - 5', checked: false }, {desc: '5 - 10', checked: false }, {desc: 'свыше 10', checked: false }], name: 'personale'},
+  {title: 'Количество операций в месяц, шт', items: [{desc: 'до 10', checked: true }, {desc: '10 - 20', checked: false }, {desc: 'более 20', checked: false }], name:'operations'},
+]
