@@ -11,7 +11,7 @@ export type FormDataType = {
   personale: FormDataEntryValue | null
 }
 
-const FormItems = ({update}:{update: (result: string) => void}) => {
+const FormItems = ({update}:{update: (result: string | null) => void}) => {
   const [data, setData] = useState<FormDataType>();
   // const [result, setResult] = useState('');
 

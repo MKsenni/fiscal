@@ -2,7 +2,7 @@ import { FormDataType } from "@/components/calculator/formItems";
 
 export const calculatorFunc = (data: FormDataType) => {
   const {opf, kind, personale, operations} = data;
-  let result = '';
+  let result: string | null = '';
   if (opf === 'Индивидуальный предприниматель') {
     if (kind === 'УСН Доходы') {
       if (personale === '0 (для ИП)') {
@@ -66,7 +66,7 @@ export const calculatorFunc = (data: FormDataType) => {
   } else {
     if (kind === 'УСН Доходы') {
       if (personale === '0 (для ИП)') {
-        result = 'неверное количество сотрудников'
+        result = null
       } else if (personale === '1') {
         if(operations === 'до 10') {
           result = '3 000';
@@ -88,7 +88,7 @@ export const calculatorFunc = (data: FormDataType) => {
       }
     } else if (kind === 'УСН Доходы минус Расходы') {
       if (personale === '0 (для ИП)') {
-        result = 'неверное количество сотрудников'
+        result = null
       } else if (personale === '1') {
         if(operations === 'до 10') {
           result = '5 000';
