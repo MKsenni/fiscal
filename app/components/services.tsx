@@ -50,6 +50,7 @@ const NameBlock = ({ name }: { name: [string, string] }) => {
 
   return (
     <div
+      id="packages"
       className="group h-full w-full flex flex-col items-center justify-center cursor-pointer p-3 shadow-lg rounded transition-transform hover:scale-110 hover:absolute hover:z-20"
       onClick={handleClick}
     >

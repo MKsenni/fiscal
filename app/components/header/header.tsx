@@ -114,7 +114,7 @@ const Header = () => {
               href="tel:+79220987868"
             >
               <LuPhoneCall style={{ color: '#6CAC3D' }} />
-              <span className='text-sky-800'>+7 (922) 098-78-68</span>
+              <span className="text-sky-800">+7 (922) 098-78-68</span>
             </a>
           </div>
           <div>

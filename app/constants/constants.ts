@@ -137,8 +137,41 @@ export const promos = [
 ];
 
 export const calculatorBlocks = [
-  {title: 'Организационно-правовая форма', items: [{desc: 'Индивидуальный предприниматель', checked: true }, {desc: 'Общество с ограниченной ответственностью', checked: false}], name: 'opf'},
-  {title: 'Вид налогообложения', items: [{desc: 'УСН Доходы', checked: true }, {desc: 'УСН Доходы минус Расходы', checked: false }, {desc: 'ОСНО', checked: false }], name: 'kind'},
-  {title: 'Количество сотрудников', items: [{desc: '0 (для ИП)', checked: true }, {desc: '1', checked: false }, {desc: '2 - 5', checked: false }, {desc: '5 - 10', checked: false }, {desc: 'свыше 10', checked: false }], name: 'personale'},
-  {title: 'Количество операций в месяц, шт', items: [{desc: 'до 10', checked: true }, {desc: '10 - 20', checked: false }, {desc: 'более 20', checked: false }], name:'operations'},
-]
+  {
+    title: 'Организационно-правовая форма',
+    items: [
+      { desc: 'Индивидуальный предприниматель', checked: true },
+      { desc: 'Общество с ограниченной ответственностью', checked: false },
+    ],
+    name: 'opf',
+  },
+  {
+    title: 'Вид налогообложения',
+    items: [
+      { desc: 'УСН Доходы', checked: true },
+      { desc: 'УСН Доходы минус Расходы', checked: false },
+      { desc: 'ОСНО', checked: false },
+    ],
+    name: 'kind',
+  },
+  {
+    title: 'Количество сотрудников',
+    items: [
+      { desc: '0 (для ИП)', checked: true },
+      { desc: '1', checked: false },
+      { desc: '2 - 5', checked: false },
+      { desc: '5 - 10', checked: false },
+      { desc: 'свыше 10', checked: false },
+    ],
+    name: 'personale',
+  },
+  {
+    title: 'Количество операций в месяц, шт',
+    items: [
+      { desc: 'до 10', checked: true },
+      { desc: '10 - 20', checked: false },
+      { desc: 'более 20', checked: false },
+    ],
+    name: 'operations',
+  },
+];
